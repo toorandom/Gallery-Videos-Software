@@ -1,0 +1,17 @@
+int main(int argc , char **argv) {
+double ng[8],bg[8];
+int numsp=0,j;
+char *sp[8],*del=",";
+
+for(j=0;j<argc-1;j++) {
+sp[j]=argv[j];
+if(strtok(sp[j],del) != NULL) {
+	bg[j]=sp[j];
+	ng[j] = strtok(sp[j],NULL);
+	numsp++;
+	}
+
+}
+
+
+}
